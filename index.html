@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!--This code pushes the text in input to alert when button is clicked-->
+<form>
+    <input type="text" id="text">
+    <input type="submit" id="submit">
+</form>    
+
+<script>
+    document.getElementById("submit").addEventListener("click", displayText);
+    function displayText() {
+        alert(document.getElementById("text").value);
+    };
+</script>
+</body>
+</html>
