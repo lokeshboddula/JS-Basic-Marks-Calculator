@@ -11,12 +11,13 @@
     <input type="text" id="text">
     <input type="submit" id="submit">
 </form>    
-
+<p id="user-name">User Name:</p>
 <script>
     document.getElementById("submit").addEventListener("click", displayText);
     function displayText() {
         alert(document.getElementById("text").value);
+        document.getElementById("user-name").innerHTML = "User Name: Lokesh";
     };
 </script>
 </body>
-</html>
+</html> 
