@@ -9,14 +9,14 @@
  <!--This code pushes the text in input to alert when button is clicked-->
 <form>
     <input type="text" id="text">
-    <input type="submit" id="submit">
+    <button type="button" id="submit">Submit</button> <br>
+    <label for= "user" id= "user">User name:</label>
 </form>    
-<p id="user-name">User Name:</p>
 <script>
     document.getElementById("submit").addEventListener("click", displayText);
     function displayText() {
-        alert(document.getElementById("text").value);
-        document.getElementById("user-name").innerHTML = "User Name: Lokesh";
+        alert(document.getElementById("submit").value);
+        document.getElementById("user").innerHTML = "User name: Lokesh";
     };
 </script>
 </body>
