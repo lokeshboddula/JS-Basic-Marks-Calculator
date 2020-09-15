@@ -10,13 +10,13 @@
 <form>
     <input type="text" id="text">
     <button type="button" id="submit">Submit</button> <br>
-    <label for= "user" id= "user">User name:</label>
+    <label for= "user" id= "user">User Name:</label>
 </form>    
 <script>
     document.getElementById("submit").addEventListener("click", displayText);
     function displayText() {
-        alert(document.getElementById("submit").value);
-        document.getElementById("user").innerHTML = "User name: Lokesh";
+        alert(document.getElementById("text").value);
+        document.getElementById("user").innerHTML = "User Name: " + document.getElementById("text").value;
     };
 </script>
 </body>
